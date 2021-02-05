@@ -8,19 +8,14 @@ export default class Calculator {
     switch(true) {
       case (diet === false):
         this.lifeExpectancy -= 5;
-        
       case (exercise === false):
         this.lifeExpectancy -= 5;
-        
       case (seatbelt === false):
         this.lifeExpectancy -= 20;
-        
       case (smoke === true):
         this.lifeExpectancy -= 10;
-        
       case (drink === true):
         this.lifeExpectancy -= 10;
-        
     }
   }
   mercury() {

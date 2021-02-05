@@ -12,10 +12,9 @@ describe('Calculator', () => {
   });
 
   test('should calculate life expectancy depending on user input', () => {
-    calculator.years(false, false, false, true, true)
+    calculator.years(false, false, false, false, false);
     expect(calculator.lifeExpectancy).toEqual(45);
   });
-
   test('should return user age in Mercury years', () => {
     expect(calculator.mercury()).toEqual(7);
   });
@@ -30,6 +29,10 @@ describe('Calculator', () => {
 
   test('should return user age in Jupiter years', () => {
   expect(calculator.jupiter()).toEqual(355);
+  });
+
+  test('should return years left to live if current planet is earth' , () => {
+    expect(calculator.yearsleft(earth)).toEqual(555);
   })
 });
 
