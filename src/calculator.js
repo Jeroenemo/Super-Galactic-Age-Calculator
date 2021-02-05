@@ -4,6 +4,7 @@ export default class Calculator {
     this.age = age;
     this.lifeExpectancy = 95;
   }
+
   years(diet, exercise, seatbelt, smoke, drink) {
     switch(true) {
       case (diet === false):
@@ -18,33 +19,38 @@ export default class Calculator {
         this.lifeExpectancy -= 10;
     }
   }
-  mercury(number) {
+
+  mercuryYearEquivalent(number) {
     return Math.floor(number / 0.24);
   }
-  venus(number) {
+
+  venusYearEquivalent(number) {
     return Math.floor(number / 0.62);
   }
-  mars(number) {
+
+  marsYearEquivalent(number) {
     return Math.floor(number / 1.88);
   }
-  jupiter(number) {
+
+  jupiterYearEquivalent(number) {
     return Math.floor(number / 11.86)
   }
+
   yearsLeft(planet) {
     const yearsLeft = this.lifeExpectancy - this.age;
     switch(true) {
       case (planet === "mercury"):
-        return this.mercury(yearsLeft);
-        break;
+        return this.mercuryYearEquivalent(yearsLeft);
+        
       case (planet === "venus"):
-        return this.venus(yearsLeft);
-        break;
+        return this.venusYearEquivalent(yearsLeft);
+        
       case (planet === "mars"):
-        return this.mars(yearsLeft);
-        break;
+        return this.marsYearEquivalent(yearsLeft);
+        
       case (planet === "jupiter"):
-        return this.jupiter(yearsLeft);
-        break;
+        return this.jupiterYearEquivalent(yearsLeft);
+        
     }
     return yearsLeft;
   }

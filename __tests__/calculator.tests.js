@@ -16,19 +16,19 @@ describe('Calculator', () => {
     expect(calculator.lifeExpectancy).toEqual(45);
   });
   test('should return user age in Mercury years', () => {
-    expect(calculator.mercury(30)).toEqual(125);
+    expect(calculator.mercuryYearEquivalent(30)).toEqual(125);
   });
 
   test('should return user age in Venus years', () => {
-    expect(calculator.venus(30)).toEqual(48);
+    expect(calculator.venusYearEquivalent(30)).toEqual(48);
   });
 
   test('should return user age in Mars years', () => {
-  expect(calculator.mars(30)).toEqual(15);
+  expect(calculator.marsYearEquivalent(30)).toEqual(15);
   });
 
   test('should return user age in Jupiter years', () => {
-  expect(calculator.jupiter(30)).toEqual(2);
+  expect(calculator.jupiterYearEquivalent(30)).toEqual(2);
   });
 
   test('should return years left if planet is earth', () => {
