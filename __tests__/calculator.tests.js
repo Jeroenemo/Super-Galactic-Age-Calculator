@@ -8,7 +8,7 @@ describe('Calculator', () => {
   });
 
   test('should create player object with passed in arguments', () => {
-    expect(calculator).toEqual({name: "Jeroen", age: 30})
+    expect(calculator).toEqual({user: "Jeroen", age: 30})
   })
 })
 
