@@ -21,8 +21,8 @@ export default class Calculator {
   mercury(number) {
     return Math.floor(number / 0.24);
   }
-  venus() {
-    return Math.floor(this.age / 0.62);
+  venus(number) {
+    return Math.floor(number / 0.62);
   }
   mars() {
     return Math.floor(this.age / 1.88);
