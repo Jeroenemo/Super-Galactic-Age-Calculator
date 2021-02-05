@@ -2,6 +2,7 @@ export default class Calculator {
   constructor(user, age) {
     this.user = user;
     this.age = age;
+    this.lifeExpectancy = undefined;
   }
   mercury() {
     return Math.floor(this.age * 0.24);

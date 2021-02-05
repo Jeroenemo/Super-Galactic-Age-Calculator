@@ -8,17 +8,21 @@ describe('Calculator', () => {
   });
 
   test('should create player object with passed in arguments', () => {
-    expect(calculator).toEqual({user: "Jeroen", age: 30});
+    expect(calculator).toEqual({user: "Jeroen", age: 30, lifeExpectancy: undefned});
   });
+
   test('should return user age in Mercury years', () => {
     expect(calculator.mercury()).toEqual(7);
   });
+
   test('should return user age in Venus years', () => {
     expect(calculator.venus()).toEqual(18);
   });
+
   test('should return user age in Mars years', () => {
   expect(calculator.mars()).toEqual(56);
   });
+
   test('should return user age in Jupiter years', () => {
   expect(calculator.jupiter()).toEqual(355);
   })
