@@ -57,7 +57,6 @@ export default class Calculator {
         years = this.jupiterYearEquivalent(yearsLeft);
         break;
     }
-    
     return (`You have ${years} years to live`);
   }
 }
