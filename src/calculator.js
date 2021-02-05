@@ -3,4 +3,5 @@ export default class Calculator {
     this.user = user;
     this.age = age;
   }
+  age
 }
