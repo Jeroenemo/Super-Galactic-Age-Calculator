@@ -38,20 +38,23 @@ export default class Calculator {
 
   yearsLeft(planet) {
     const yearsLeft = this.lifeExpectancy - this.age;
+    
+    let years = 0
     switch(true) {
       case (planet === "mercury"):
-        return this.mercuryYearEquivalent(yearsLeft);
-        
+        years = this.mercuryYearEquivalent(yearsLeft);
+        break;
       case (planet === "venus"):
-        return this.venusYearEquivalent(yearsLeft);
-        
+        years = this.venusYearEquivalent(yearsLeft);
+        break;
       case (planet === "mars"):
-        return this.marsYearEquivalent(yearsLeft);
-        
+        years = this.marsYearEquivalent(yearsLeft);
+        break;
       case (planet === "jupiter"):
-        return this.jupiterYearEquivalent(yearsLeft);
-        
+        years = this.jupiterYearEquivalent(yearsLeft);
+        break;
     }
-    return yearsLeft;
+    
+    return (`You have ${years} years to live`);
   }
 }
