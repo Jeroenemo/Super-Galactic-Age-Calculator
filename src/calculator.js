@@ -7,21 +7,16 @@ export default class Calculator {
 
   years(diet, exercise, seatbelt, smoke, drink) {
     switch(true) {
-    case (diet === false):
+    case (diet === 'false'):
       this.lifeExpectancy -= 5;
-      break;
-    case (exercise === false):
+    case (exercise === 'false'):
       this.lifeExpectancy -= 5;
-      break;
-    case (seatbelt === false):
+    case (seatbelt === 'false'):
       this.lifeExpectancy -= 20;
-      break;
-    case (smoke === true):
+    case (smoke === 'true'):
       this.lifeExpectancy -= 10;
-      break;
-    case (drink === true):
+    case (drink === 'true'):
       this.lifeExpectancy -= 10;
-      break;
     }
   }
 
