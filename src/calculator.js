@@ -2,21 +2,21 @@ export default class Calculator {
   constructor(user, age) {
     this.user = user;
     this.age = age;
-    this.lifeExpectancy = 95;
+    this.lifeSpan = 95;
   }
 
-  years(diet, exercise, seatbelt, smoke, drink) {
+  lifeExpectancy(diet, exercise, seatbelt, smoke, drink) {
     switch(true) {
     case (diet === 'false'):
-      this.lifeExpectancy -= 5;
+      this.lifeSpan -= 5;
     case (exercise === 'false'):
-      this.lifeExpectancy -= 5;
+      this.lifeSpan -= 5;
     case (seatbelt === 'false'):
-      this.lifeExpectancy -= 20;
+      this.lifeSpan -= 20;
     case (smoke === 'true'):
-      this.lifeExpectancy -= 10;
+      this.lifeSpan -= 10;
     case (drink === 'true'):
-      this.lifeExpectancy -= 10;
+      this.lifeSpan -= 10;
     }
   }
 
@@ -37,7 +37,7 @@ export default class Calculator {
   }
 
   yearsLeft(planet) {
-    const yearsLeft = this.lifeExpectancy - this.age;
+    const yearsLeft = this.lifeSpan - this.age;
     
     let years = 0;
     switch(true) {
