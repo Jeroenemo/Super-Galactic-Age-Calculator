@@ -13,13 +13,13 @@ export default class Calculator {
       totalYears -= 5;
     }
     if (seatbelt === false) {
-      totalYears -= 5;
+      totalYears -= 20;
     }
     if (smoke === true) {
-      totalYears -= 5;
+      totalYears -= 10;
     }
     if (drink === true) {
-      totalYears -= 5;
+      totalYears -= 10;
     }
     this.lifeExpectancy = totalYears;
   }

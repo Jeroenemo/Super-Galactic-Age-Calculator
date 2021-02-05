@@ -12,7 +12,7 @@ describe('Calculator', () => {
   });
 
   test('should calculate life expectancy depending on user input', () => {
-    calculator.years(true, false, true, false, true)
+    calculator.years(false, false, false, true, true)
     expect(calculator.lifeExpectancy).toEqual(100);
   })
 
