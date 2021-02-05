@@ -31,8 +31,8 @@ export default class Calculator {
     return Math.floor(number / 11.86)
   }
   yearsLeft(planet) {
-    let yearsLeft = this.lifeExpectancy - this.age;
-    
+    const yearsLeft = this.lifeExpectancy - this.age;
+   
     return yearsLeft;
   }
 }
