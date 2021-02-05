@@ -6,19 +6,23 @@ export default class Calculator {
   }
 
   lifeExpectancy(diet, exercise, seatbelt, smoke, drink) {
-    switch(true) {
-    case (diet === 'false'):
+    if (diet === 'false'){
       this.lifeSpan -= 5;
-    case (exercise === 'false'):
+    }
+    if (exercise === 'false'){
       this.lifeSpan -= 5;
-    case (seatbelt === 'false'):
+    }
+    if (seatbelt === 'false'){
       this.lifeSpan -= 20;
-    case (smoke === 'true'):
+    }
+    if (smoke === 'true'){
       this.lifeSpan -= 10;
-    case (drink === 'true'):
+    }
+    if (drink === 'true'){
       this.lifeSpan -= 10;
     }
   }
+  
 
   mercuryYearEquivalent(number) {
     return Math.floor(number / 0.24);

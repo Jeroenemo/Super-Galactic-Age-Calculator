@@ -17,8 +17,8 @@ $(document).ready(function() {
     const smoke = $("input:radio[name=smoke]:checked").val();
     const drink = $("input:radio[name=drink]:checked").val();
     let calculator = new Calculator(name, age);
-    calculator.years(diet, exercise, seatbelt, smoke, drink);
-    console.log(typeof diet);
+    calculator.lifeExpectancy(diet, exercise, seatbelt, smoke, drink);
+    console.log(calculator);
     
     
   });
