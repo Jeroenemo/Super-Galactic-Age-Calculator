@@ -9,4 +9,6 @@ export default class Calculator {
   venus() {
     return Math.floor(this.age * 0.62);
   }
+  
+  
 }
