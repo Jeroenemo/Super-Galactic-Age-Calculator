@@ -57,6 +57,11 @@ export default class Calculator {
         years = this.jupiterYearEquivalent(yearsLeft);
         break;
     }
-    return (`You have ${years} years to live`);
-  }
+    if (yearsLeft >= 0) {
+      return (`You have ${years} years to live`);
+    } else {
+      return (`You have surpassed your life expectancy by ${Math.abs(years)} years`)
+    }
+
+    }
 }
