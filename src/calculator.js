@@ -6,4 +6,7 @@ export default class Calculator {
   mercury() {
     return Math.floor(this.age * 0.24);
   }
+  venus() {
+    return Math.floor(this.age * 0.62);
+  }
 }
