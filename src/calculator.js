@@ -22,7 +22,7 @@ export default class Calculator {
     return Math.floor(this.age / 0.24);
   }
   venus() {
-    return Math.floor(this.age * 0.62);
+    return Math.floor(this.age / 0.62);
   }
   mars() {
     return Math.floor(this.age * 1.88);
