@@ -27,8 +27,8 @@ export default class Calculator {
   mars(number) {
     return Math.floor(number / 1.88);
   }
-  jupiter() {
-    return Math.floor(this.age / 11.86)
+  jupiter(number) {
+    return Math.floor(number / 11.86)
   }
   // yearsLeft(planet) {
   //   switch(true) {
