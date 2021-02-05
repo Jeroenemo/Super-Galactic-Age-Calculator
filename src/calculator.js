@@ -25,7 +25,7 @@ export default class Calculator {
     return Math.floor(this.age / 0.62);
   }
   mars() {
-    return Math.floor(this.age * 1.88);
+    return Math.floor(this.age / 1.88);
   }
   jupiter() {
     return Math.floor(this.age * 11.86)
