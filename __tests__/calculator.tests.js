@@ -19,5 +19,8 @@ describe('Calculator', () => {
   test('should return user age in Mars years', () => {
   expect(calculator.mars()).toEqual(56);
   });
+  test('should return user age in Jupiter years', () => {
+  expect(calculator.jupiter).toEqual(400);
+  })
 });
 
