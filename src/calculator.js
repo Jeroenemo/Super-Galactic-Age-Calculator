@@ -39,6 +39,9 @@ export default class Calculator {
       case (planet === "venus"):
         return this.venus(yearsLeft);
         break;
+      case (planet === "mars"):
+        return this.mars(yearsLeft);
+        break;
     }
     return yearsLeft;
   }
