@@ -12,7 +12,23 @@ describe('Calculator', () => {
   });
 
   test('should calculate life expectancy depending on user input', () => {
-    calculator.lifeExpectancy('false', 'false', 'false', 'false', 'false');
+    calculator.lifeExpectancy('true', 'false', 'false', 'false', 'false');
+    expect(calculator.lifeSpan).toEqual(45);
+  });
+  test('should calculate life expectancy depending on user input', () => {
+    calculator.lifeExpectancy('false', 'true', 'false', 'false', 'false');
+    expect(calculator.lifeSpan).toEqual(45);
+  });
+  test('should calculate life expectancy depending on user input', () => {
+    calculator.lifeExpectancy('false', 'false', 'true', 'false', 'false');
+    expect(calculator.lifeSpan).toEqual(45);
+  });
+  test('should calculate life expectancy depending on user input', () => {
+    calculator.lifeExpectancy('false', 'false', 'false', 'true', 'false');
+    expect(calculator.lifeSpan).toEqual(45);
+  });
+  test('should calculate life expectancy depending on user input', () => {
+    calculator.lifeExpectancy('false', 'false', 'false', 'false', 'true');
     expect(calculator.lifeSpan).toEqual(45);
   });
   test('should return user age in Mercury years', () => {
