@@ -34,7 +34,11 @@ export default class Calculator {
     const yearsLeft = this.lifeExpectancy - this.age;
     switch(true) {
       case (planet === "mercury"):
-        return this.mercury(yearsLeft)
+        return this.mercury(yearsLeft);
+        break;
+      case (planet === "venus"):
+        return this.venus(yearsLeft);
+        break;
     }
     return yearsLeft;
   }
