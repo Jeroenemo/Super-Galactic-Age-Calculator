@@ -41,6 +41,9 @@ export default class Calculator {
     
     let years = 0
     switch(true) {
+      case (planet === "earth"):
+        years = yearsLeft;
+        break;
       case (planet === "mercury"):
         years = this.mercuryYearEquivalent(yearsLeft);
         break;
