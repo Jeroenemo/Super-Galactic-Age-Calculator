@@ -13,7 +13,7 @@ describe('Calculator', () => {
 
   test('should calculate life expectancy depending on user input', () => {
     calculator.years(false, false, false, true, true)
-    expect(calculator.lifeExpectancy).toEqual(100);
+    expect(calculator.lifeExpectancy).toEqual(45);
   })
 
   test('should return user age in Mercury years', () => {
