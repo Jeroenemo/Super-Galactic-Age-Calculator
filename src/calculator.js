@@ -30,11 +30,9 @@ export default class Calculator {
   jupiter(number) {
     return Math.floor(number / 11.86)
   }
-  // yearsLeft(planet) {
-  //   switch(true) {
-  //     case (planet === "earth"):
-  //       return this.lifeExpectancy.mercury();
-  //       break;
-  //   }
-  // }
+  yearsLeft(planet) {
+    let yearsLeft = this.lifeExpectancy - this.age;
+    
+    return yearsLeft;
+  }
 }
