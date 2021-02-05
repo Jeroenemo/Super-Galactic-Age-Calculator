@@ -31,8 +31,5 @@ describe('Calculator', () => {
   expect(calculator.jupiter()).toEqual(355);
   });
 
-  test('should return years left to live if current planet is earth' , () => {
-    expect(calculator.yearsleft(earth)).toEqual(555);
-  })
 });
 
