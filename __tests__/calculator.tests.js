@@ -28,7 +28,7 @@ describe('Calculator', () => {
   });
 
   test('should return user age in Jupiter years', () => {
-  expect(calculator.jupiter()).toEqual(2);
+  expect(calculator.jupiter(30)).toEqual(2);
   });
 
   // test('should return years left if planet is earth', () => {
