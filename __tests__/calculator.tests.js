@@ -8,7 +8,7 @@ describe('Calculator', () => {
   });
 
   test('should create player object with passed in arguments', () => {
-    expect(calculator).toEqual({user: "Jeroen", age: 30, lifeExpectancy: undefned});
+    expect(calculator).toEqual({user: "Jeroen", age: 30, lifeExpectancy: undefined});
   });
 
   test('should return user age in Mercury years', () => {
