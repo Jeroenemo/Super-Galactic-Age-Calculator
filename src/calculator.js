@@ -12,5 +12,7 @@ export default class Calculator {
   mars() {
     return Math.floor(this.age * 1.88);
   }
-  
+  jupiter() {
+    return Math.floor(this.age * 11.86)
+  }
 }
