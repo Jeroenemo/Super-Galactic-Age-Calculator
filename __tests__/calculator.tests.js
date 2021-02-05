@@ -27,9 +27,9 @@ describe('Calculator', () => {
     calculator.lifeExpectancy('false', 'false', 'false', 'true', 'false');
     expect(calculator.lifeSpan).toEqual(45);
   });
-  test('should calculate life expectancy depending on user input', () => {
+  test('should calculate life expectancy if drink = true', () => {
     calculator.lifeExpectancy('false', 'false', 'false', 'false', 'true');
-    expect(calculator.lifeSpan).toEqual(45);
+    expect(calculator.lifeSpan).toEqual(55);
   });
   test('should return user age in Mercury years', () => {
     expect(calculator.mercuryYearEquivalent(30)).toEqual(125);
