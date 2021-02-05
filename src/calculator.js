@@ -2,26 +2,26 @@ export default class Calculator {
   constructor(user, age) {
     this.user = user;
     this.age = age;
-    this.lifeExpectancy = undefined;
+    this.lifeExpectancy = 95;
   }
   years(diet, exercise, seatbelt, smoke, drink) {
-    let totalYears = 95;
-    if (diet === false) {
-      totalYears -= 5;
+    switch(true) {
+      case (diet === false):
+        this.lifeExpectancy -= 5;
+        
+      case (exercise === false):
+        this.lifeExpectancy -= 5;
+        
+      case (seatbelt === false):
+        this.lifeExpectancy -= 20;
+        
+      case (smoke === true):
+        this.lifeExpectancy -= 10;
+        
+      case (drink === true):
+        this.lifeExpectancy -= 10;
+        
     }
-    if (exercise === false) {
-      totalYears -= 5;
-    }
-    if (seatbelt === false) {
-      totalYears -= 20;
-    }
-    if (smoke === true) {
-      totalYears -= 10;
-    }
-    if (drink === true) {
-      totalYears -= 10;
-    }
-    this.lifeExpectancy = totalYears;
   }
   mercury() {
     return Math.floor(this.age * 0.24);
