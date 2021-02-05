@@ -21,7 +21,7 @@ describe('Calculator', () => {
   });
   test('should calculate life expectancy depending on user input', () => {
     calculator.lifeExpectancy('false', 'false', 'true', 'false', 'false');
-    expect(calculator.lifeSpan).toEqual(45);
+    expect(calculator.lifeSpan).toEqual(85);
   });
   test('should calculate life expectancy depending on user input', () => {
     calculator.lifeExpectancy('false', 'false', 'false', 'true', 'false');
