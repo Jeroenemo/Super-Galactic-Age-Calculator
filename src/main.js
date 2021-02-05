@@ -11,9 +11,16 @@ $(document).ready(function() {
   $("button#submit").on('click', function() {
     const name = $('#name').val();
     const age = parseInt($('#age').val());
+    const diet = $("input:radio[name=diet]:checked").val()
+    const exercise = $("input:radio[name=exercise]:checked").val()
+    const seatbelt = $("input:radio[name=seatbelt]:checked").val()
+    const smoke = $("input:radio[name=smoke]:checked").val()
+    const drink = $("input:radio[name=drink]:checked").val()
     let calculator = new Calculator(name, age);
-    console.log(name);
-    console.log(age);
-    console.log(calculator);
+    console.log(diet)
+    console.log(exercise)
+    console.log(seatbelt)
+    console.log(smoke)
+    console.log(drink)
   });
 });
