@@ -42,10 +42,12 @@ describe('Calculator', () => {
   test('should return years left if planet is venus', () => {
     expect(calculator.yearsLeft("venus")).toEqual(104);
   });
-  
+
   test('should return years left if planet is mars', () => {
     expect(calculator.yearsLeft("mars")).toEqual(34);
   });
-
+  test('should return years left if planet is jupiter', () => {
+    expect(calculator.yearsLeft("jupiter")).toEqual(20);
+  });
 });
 
