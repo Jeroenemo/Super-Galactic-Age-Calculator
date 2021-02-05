@@ -4,6 +4,25 @@ export default class Calculator {
     this.age = age;
     this.lifeExpectancy = undefined;
   }
+  years(diet, exercise, seatbelt, smoke, drink) {
+    let totalYears = 95;
+    if (diet === false) {
+      totalYears -= 5;
+    }
+    if (exercise === false) {
+      totalYears -= 5;
+    }
+    if (seatbelt === false) {
+      totalYears -= 5;
+    }
+    if (smoke === true) {
+      totalYears -= 5;
+    }
+    if (drink === true) {
+      totalYears -= 5;
+    }
+    this.lifeExpectancy = totalYears;
+  }
   mercury() {
     return Math.floor(this.age * 0.24);
   }
