@@ -53,7 +53,7 @@ describe('Calculator', () => {
 
   test('should return years lived past life expectancy', () => {
     const calculator = new Calculator("Jeroen", 100);
-    expect(calculator.yearsLeft("earth")).toEqual(5);
+    expect(calculator.yearsLeft("earth")).toEqual("You have surpassed your life expectancy by 5 years");
   })
 });
 
