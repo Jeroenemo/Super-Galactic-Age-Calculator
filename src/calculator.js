@@ -7,16 +7,21 @@ export default class Calculator {
 
   years(diet, exercise, seatbelt, smoke, drink) {
     switch(true) {
-      case (diet === false):
-        this.lifeExpectancy -= 5;
-      case (exercise === false):
-        this.lifeExpectancy -= 5;
-      case (seatbelt === false):
-        this.lifeExpectancy -= 20;
-      case (smoke === true):
-        this.lifeExpectancy -= 10;
-      case (drink === true):
-        this.lifeExpectancy -= 10;
+    case (diet === false):
+      this.lifeExpectancy -= 5;
+      break;
+    case (exercise === false):
+      this.lifeExpectancy -= 5;
+      break;
+    case (seatbelt === false):
+      this.lifeExpectancy -= 20;
+      break;
+    case (smoke === true):
+      this.lifeExpectancy -= 10;
+      break;
+    case (drink === true):
+      this.lifeExpectancy -= 10;
+      break;
     }
   }
 
@@ -33,35 +38,35 @@ export default class Calculator {
   }
 
   jupiterYearEquivalent(number) {
-    return Math.floor(number / 11.86)
+    return Math.floor(number / 11.86);
   }
 
   yearsLeft(planet) {
     const yearsLeft = this.lifeExpectancy - this.age;
     
-    let years = 0
+    let years = 0;
     switch(true) {
-      case (planet === "earth"):
-        years = yearsLeft;
-        break;
-      case (planet === "mercury"):
-        years = this.mercuryYearEquivalent(yearsLeft);
-        break;
-      case (planet === "venus"):
-        years = this.venusYearEquivalent(yearsLeft);
-        break;
-      case (planet === "mars"):
-        years = this.marsYearEquivalent(yearsLeft);
-        break;
-      case (planet === "jupiter"):
-        years = this.jupiterYearEquivalent(yearsLeft);
-        break;
+    case (planet === "earth"):
+      years = yearsLeft;
+      break;
+    case (planet === "mercury"):
+      years = this.mercuryYearEquivalent(yearsLeft);
+      break;
+    case (planet === "venus"):
+      years = this.venusYearEquivalent(yearsLeft);
+      break;
+    case (planet === "mars"):
+      years = this.marsYearEquivalent(yearsLeft);
+      break;
+    case (planet === "jupiter"):
+      years = this.jupiterYearEquivalent(yearsLeft);
+      break;
     }
     if (yearsLeft >= 0) {
       return (`You have ${years} years to live`);
     } else {
-      return (`You have surpassed your life expectancy by ${Math.abs(years)} years`)
+      return (`You have surpassed your life expectancy by ${Math.abs(years)} years`);
     }
 
-    }
+  }
 }
