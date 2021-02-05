@@ -16,7 +16,7 @@ describe('Calculator', () => {
     expect(calculator.lifeExpectancy).toEqual(45);
   });
   test('should return user age in Mercury years', () => {
-    expect(calculator.mercury()).toEqual(7);
+    expect(calculator.mercury()).toEqual(125);
   });
 
   test('should return user age in Venus years', () => {
