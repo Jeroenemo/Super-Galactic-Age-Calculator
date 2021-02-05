@@ -32,7 +32,7 @@ describe('Calculator', () => {
   });
 
   test('should return years left if planet is earth', () => {
-    expect(calculator.yearsLeft("earth")).toEqual(45);
+    expect(calculator.yearsLeft("earth")).toEqual(65);
   })
 });
 
