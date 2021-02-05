@@ -3,5 +3,7 @@ export default class Calculator {
     this.user = user;
     this.age = age;
   }
-  age
+  mercury() {
+    return this.age * 0.24;
+  }
 }
