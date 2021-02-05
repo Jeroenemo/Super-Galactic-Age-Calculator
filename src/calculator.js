@@ -4,6 +4,6 @@ export default class Calculator {
     this.age = age;
   }
   mercury() {
-    return this.age * 0.24;
+    return Math.floor(this.age * 0.24);
   }
 }
