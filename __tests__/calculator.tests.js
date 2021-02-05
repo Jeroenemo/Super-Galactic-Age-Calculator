@@ -17,7 +17,7 @@ describe('Calculator', () => {
     expect(calculator.venus()).toEqual(18);
   });
   test('should return user age in Mars years', () => {
-  expect(calculator.mars()).toEqual(400);
+  expect(calculator.mars()).toEqual(56);
   });
 });
 
