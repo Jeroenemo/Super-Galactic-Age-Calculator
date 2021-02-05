@@ -18,8 +18,8 @@ export default class Calculator {
         this.lifeExpectancy -= 10;
     }
   }
-  mercury() {
-    return Math.floor(this.age / 0.24);
+  mercury(number) {
+    return Math.floor(number / 0.24);
   }
   venus() {
     return Math.floor(this.age / 0.62);
@@ -30,5 +30,11 @@ export default class Calculator {
   jupiter() {
     return Math.floor(this.age / 11.86)
   }
-  
+  // yearsLeft(planet) {
+  //   switch(true) {
+  //     case (planet === "earth"):
+  //       return this.lifeExpectancy.mercury();
+  //       break;
+  //   }
+  // }
 }
