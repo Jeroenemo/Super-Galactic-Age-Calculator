@@ -1,31 +1,40 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+**A Simple TDD Program**
 
-#### By (Your Name Here)
+#### By Jeroen van Seeters
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* webpack
+* eslint
+* Jest
+* Babel
 
 ## Description
 
+This is a simple program designed to showcase my grasp on TTD, or test driven development. The user is asked for a series of inputs, and the program will calculate the users age and life expectancy on a series of planets relative to the that planets year equivalent.
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+No set up available. Down load this repository and look at the code via a code editor. 
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* UI is basic and broken
+* class functions need refactoring
 
 ## License
 
+MIT
+
+Copyright (c) 2021 Jeroen van Seeters
+
 ## Contact Information
+
+Jeroen van Seeters **vanseetersjeroen@gmail.com**
+
